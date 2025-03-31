@@ -1,0 +1,4 @@
+concurrently----->
+add below lines in package.json under script section:
+"server": "cd server && npm run dev",
+"dev": "concurrently -n \"client, server\" -c \bgBlue, bgYellow\" \"npm start\"  \"npm run server\""
